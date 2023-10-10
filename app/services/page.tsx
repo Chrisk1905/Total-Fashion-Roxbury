@@ -1,3 +1,20 @@
 export default function Page(){
-    return <h1>Hello, this is /services</h1>
+    return (
+        <>
+            <div className="">
+                <div>
+                    <h1>Dry Clean</h1>
+                </div>
+                <div>
+                    <h1>Alterations</h1>
+                </div>
+                <div>
+                    <h1>Wedding Dress</h1>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </>
+    );
 }

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from 'public/logo.png'
-
+import Logo from 'public/Total-Fashion-Logo.jpg'
+import Footer from './../components/footer'
 
 export default function RootLayout({
   children,
@@ -21,6 +21,7 @@ export default function RootLayout({
           <Link href='./contact'> Contact </Link>
         </nav>
         {children}
+        <Footer/>
       </body>
     </html>
   )
