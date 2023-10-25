@@ -12,6 +12,9 @@ export default function Home() {
           alt="Total Fasion Roxbury"
           />
         <p> A family operated bussiness, proudly serving the White Center community. </p>
+           <div>
+                <p>sliding pictures here</p>
+            </div> 
       </div>
    </>
 );

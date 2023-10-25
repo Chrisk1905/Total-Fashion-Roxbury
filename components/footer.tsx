@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 
 export default function Footer(){
+
     return (
         <div>
             <div>
@@ -9,13 +11,11 @@ export default function Footer(){
                 <li>Wednesday 9AM-6PM</li>
                 <li>Thursday 9AM-6PM</li>
                 <li>Friday 9AM-6PM</li>
-                <li>Saturday 10AM-4PM</li>
+                <li>Saturday 9AM-4PM</li>
                 </ul>
-                <p>Gmaps here</p>
+                <div id="map"></div>
+
             </div>
-            <div>
-                <p>sliding pictures here</p>
-            </div> 
-        </div>
+         </div>
     )
 }
