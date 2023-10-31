@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Hero_Image from 'public/Total-Fashion-Hero.jpg'
-import Footer from './../components/footer'
+import Footer from './components/footer'
 
 export default function Home() {
   return (
@@ -12,9 +12,7 @@ export default function Home() {
           alt="Total Fasion Roxbury"
           />
         <p> A family operated bussiness, proudly serving the White Center community. </p>
-           <div>
-                <p>sliding pictures here</p>
-            </div> 
+           <div className='slidingPicture'></div> 
       </div>
    </>
 );

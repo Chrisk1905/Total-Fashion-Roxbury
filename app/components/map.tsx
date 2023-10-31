@@ -2,7 +2,6 @@
 
 import { useMemo } from "react"
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api"
-import styles from '../app/page.module.css'
 
 export default function Map(){
     const {isLoaded} = useLoadScript({
@@ -17,11 +16,11 @@ export default function Map(){
 
     return ( 
         <GoogleMap 
-            zoom={10}
-            center={{ lat: 44, lng: -80}}
+            zoom={15}
+            center={{ lat: 47.51759338378906, lng: -122.35620880126953}}
             mapContainerClassName="map-container"
             >
-            <Marker position={{ lat: 44, lng: -80}}> </Marker>
+            <Marker position={{ lat: 47.51759338378906, lng: -122.35620880126953}}> </Marker>
         </GoogleMap>
         
     )

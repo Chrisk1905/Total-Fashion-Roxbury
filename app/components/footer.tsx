@@ -1,8 +1,5 @@
 import Map from './map'
 
-import styles from '../app/page.module.css'
-
-
 export default function Footer(){
 
     return (
@@ -14,7 +11,7 @@ export default function Footer(){
                 <li>Thursday 9AM-6PM</li>
                 <li>Friday 9AM-6PM</li>
                 <li>Saturday 9AM-4PM</li>
-                <li>Sunday closed</li>
+                <li>Sunday Closed</li>
             </ul>
             <Map/>
          </div>

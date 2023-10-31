@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from 'public/Total-Fashion-Logo.jpg'
-import Footer from './../components/footer'
+import Logo from 'public/Total Fashion-logos_transparent.png'
+import Footer from './components/footer'
+import './globals.css'
 
 export default function RootLayout({
   children,
@@ -15,10 +16,10 @@ export default function RootLayout({
       </head>
       <body>
         <nav>
-          <Image src={Logo} height="100" alt="logo" />
-          <Link href='./'> Home </Link>
-          <Link href='./services'> Services </Link>
-          <Link href='./contact'> Contact </Link>
+          <Image className='Logo' src={Logo} width={250} alt="logo" />
+          <Link className="nav_element" href='./'> Home </Link>
+          <Link className="nav_element" href='./services'> Services </Link>
+          <Link className="nav_element" href='./contact'> Contact </Link>
         </nav>
         {children}
         <Footer/>
