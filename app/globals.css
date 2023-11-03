@@ -135,8 +135,8 @@ table {
 }
 /* end of default style reset */
 @font-face {
-	font-family: dancing-script;
-	src: url(../public/DancingScript-VariableFont_wght.ttf);
+	font-family: Tangerine-Bold;
+	src: url(../public/Tangerine-Bold.ttf);
 }
 
 body {
@@ -145,13 +145,26 @@ body {
 	background-color: #FAF9F6;
 }
 
-nav {
-	font-size: 2.5rem;
+nav{
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
+
+.Logo{
+	height: auto;
+	width: 18rem;
 }
 
 .nav_element {
 	margin: 2rem;
 	font-family: Tangerine-Bold;
+	font-size: 3rem;
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
 }
 
 .Logo {

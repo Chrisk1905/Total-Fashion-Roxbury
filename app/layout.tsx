@@ -16,7 +16,9 @@ export default function RootLayout({
       </head>
       <body>
         <nav>
-          <Image className='Logo' src={Logo} width={250} alt="logo" />
+          <Link href={'./'}>
+            <Image className='Logo' src={Logo} alt="logo" />
+          </Link>
           <Link className="nav_element" href='./'> Home </Link>
           <Link className="nav_element" href='./services'> Services </Link>
           <Link className="nav_element" href='./contact'> Contact </Link>
