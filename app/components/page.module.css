@@ -1,13 +1,18 @@
 
-
 .footer{
     display: flex;
     flex-direction: row;
     margin: 2rem;
+    justify-content: space-between;
 }
 
-.bussiness_hours li{
+.announcement{
     font-size: 1.25rem;
-    margin-bottom: .5rem;
-    margin-right: 1rem;
+    margin-bottom: .5rem;;
 }
+
+.business_hours td{
+    font-size: 1.25rem;
+    padding: .5rem;
+}
+

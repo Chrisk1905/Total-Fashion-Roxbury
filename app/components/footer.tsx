@@ -4,18 +4,42 @@ import styles from './page.module.css'
 export default function Footer(){
 
     return (
-        <div className={styles.footer}>
-            <ul className={styles.bussiness_hours}>
-                <li>Monday 9AM-6PM</li>
-                <li>Tuesday 9AM-6PM</li>
-                <li>Wednesday 9AM-6PM</li>
-                <li>Thursday 9AM-6PM</li>
-                <li>Friday 9AM-6PM</li>
-                <li>Saturday 9AM-3PM</li>
-                <li>Sunday Closed</li>
-            </ul>
+        <footer className={styles.footer}>
+            <div className={styles.business_hours}>
+                <p className={styles.announcement}>📢 CLOSED VETERANS DAY FRIDAY NOV. 11th</p>
+                <table>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9AM-6PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>9AM-6PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>9AM-6PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>9AM-6PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9AM-6PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9AM-3PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>CLOSED</td>
+                    </tr>
+                </table>   
+            </div>
             <Map />
-         </div>
+         </footer>
     )
 }
 
