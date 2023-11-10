@@ -5,3 +5,18 @@
     justify-content: space-evenly;
 }
 
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255, 255, 0.5);
+    border-left: 1px solid rgba(255,255, 255, 0.5);
+    height: 20rem;
+    width: 15rem;
+    border-radius:1rem;
+    backdrop-filter:blur(.5rem) ;
+    overflow: hidden;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.346);
+}
