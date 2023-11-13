@@ -8,6 +8,7 @@ export default function Footer(){
             <div className={styles.business_hours}>
                 <p className={styles.announcement}>📢 CLOSED THANKSGIVING DAY THURSDAY NOV. 23rd</p>
                 <table>
+                    <tbody>
                     <tr>
                         <td>Monday</td>
                         <td>9AM-6PM</td>
@@ -36,6 +37,7 @@ export default function Footer(){
                         <td>Sunday</td>
                         <td>CLOSED</td>
                     </tr>
+                    </tbody>
                 </table>   
             </div>
             <Map />
