@@ -16,3 +16,8 @@
     padding: .5rem;
 }
 
+.map_container {
+    height: 50vh;
+    width: 50%;
+
+}

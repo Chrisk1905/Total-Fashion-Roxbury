@@ -1,4 +1,4 @@
-import Map from './map'
+import TF_Map from './map'
 import styles from './page.module.css'
 
 export default function Footer(){
@@ -40,7 +40,7 @@ export default function Footer(){
                     </tbody>
                 </table>   
             </div>
-            <Map />
+            <TF_Map />
          </footer>
     )
 }

@@ -1,27 +1,19 @@
 'use client';
+import styles from './page.module.css'
 
-import { useMemo } from "react"
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api"
+import { useState } from 'react';
+import {APIProvider, Map, AdvancedMarker, Pin, InfoWindow} from '@vis.gl/react-google-maps';
 
-export default function Map(){
-    const {isLoaded} = useLoadScript({
-        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '',
-    })    
-    const center = useMemo(() => ({lat: 44, lng: -80}), [])
-    if(!isLoaded){
-        return (
-            <div>Loading...</div>
-        )
-    }
+export default function TF_Map() {
+  const position = { lat:47.51759338378906, lng: -122.35620880126953 }
 
-    return ( 
-        <GoogleMap 
-            zoom={15}
-            center={{ lat: 47.51759338378906, lng: -122.35620880126953}}
-            mapContainerClassName="map-container"
-            >
-            <Marker position={{ lat: 47.51759338378906, lng: -122.35620880126953}}> </Marker>
-        </GoogleMap>
-        
-    )
+  return(
+    <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}>
+      <div className={styles.map_container}>
+        <Map zoom={13.5} center={position}>
+
+        </Map>
+      </div>
+    </APIProvider>
+  )
 }
