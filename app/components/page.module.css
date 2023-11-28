@@ -24,6 +24,21 @@
 
 
 .directions{
-    margin-left: 50%;
-    
+    margin-top: 10%;
+    background-color: #fff;
+    border: '2px solid #fff';
+    border-radius: '3px';
+    box-shadow: "0 2px 6px rgba(0,0,0,.3)" ;
+    color: 'rgb(25,25,25)';
+    cursor: 'pointer';
+    font-family: 'Roboto,Arial,sans-serif';
+    line-height: 1rem;
+    padding: .5rem;
+}
+
+.direction_image{
+     vertical-align: middle;  
+}
+.directions span{
+    vertical-align: middle;
 }
