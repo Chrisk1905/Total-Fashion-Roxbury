@@ -6,7 +6,7 @@ export default function Footer(){
     return (
         <footer className={styles.footer}>
             <div className={styles.business_hours}>
-                <p className={styles.announcement}>Merry Christmas! ☃ We're closed Saturday December 23rd thru Monday the 25th 📢 </p>
+                <p className={styles.announcement}>Happy New Year! 📢 </p>
                 <table>
                     <tbody>
                     <tr>
