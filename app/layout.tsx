@@ -9,6 +9,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  
   return (
     <html lang="en">
       <head>
@@ -22,16 +24,11 @@ export default function RootLayout({
           <Link className="nav_element" href='./'> Home </Link>
           <Link className="nav_element" href='./services'> Services </Link>
           <Link className="nav_element" href='./contact'> Contact </Link>
+          <Link className='hamburger-menu' >
+            <i></i>
+          </Link>
         </nav>
-        <input type="checkbox" id="hamburger-input" className="burger-shower" />
-        <label id="hamburger-menu" for="hamburger-input">
-          <nav id="sidebar-menu">
-            <Link className="nav_element" href='./'> Home </Link>
-            <Link className="nav_element" href='./services'> Services </Link>
-            <Link className="nav_element" href='./contact'> Contact </Link> 
-            </nav>
-        </label>
-        <div className="overlay"></div>
+        
         {children}
         <Footer/>
       </body>
