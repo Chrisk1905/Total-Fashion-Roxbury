@@ -134,6 +134,8 @@ table {
 	border-spacing: 0;
 }
 /* end of default style reset */
+
+
 @font-face {
 	font-family: Tangerine-Bold;
 	src: url(../public/Tangerine-Bold.ttf);
@@ -172,3 +174,19 @@ a:hover{
 }
 
 /* Hamburger Menu */
+/* Hide the links inside the navigation menu (except for logo/home) */
+.nav-links {
+	display: none;
+}
+
+.fa-bars {
+	color: black;
+	padding: 0 .5rem;
+}
+
+ .fa-bars:hover{
+	color: azure;
+	background-color: grey;
+ }
+
+ 

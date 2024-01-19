@@ -19,6 +19,7 @@ export default function RootLayout({
   const myFunction = () => {
     setLinksVisible((prevValue) => !prevValue);
   };
+
   return (
     <html lang="en">
       <head>
@@ -32,8 +33,13 @@ export default function RootLayout({
           <Link className="nav_element" href='./'> Home </Link>
           <Link className="nav_element" href='./services'> Services </Link>
           <Link className="nav_element" href='./contact'> Contact </Link>
+          <div className='nav-links' style={{ display: isLinksVisible ? 'block' : 'none' }}>
+            <Link className="nav_element" href='./'> Home </Link>
+            <Link className="nav_element" href='./services'> Services </Link>
+            <Link className="nav_element" href='./contact'> Contact </Link>
+          </div>
           <Link className='hamburger-menu' href="#" onClick={myFunction}>
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon icon={faBars} className='fa-bars' size='4x'/>
           </Link>
         </nav>
         
