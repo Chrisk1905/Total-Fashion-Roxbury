@@ -154,7 +154,7 @@ body {
 
 .Logo{
 	height: auto;
-	width: 18rem;
+	width: 21rem;
 }
 
 .nav_element {
@@ -175,8 +175,14 @@ a:hover{
 
 /* Hamburger Menu */
 /* Hide the links inside the navigation menu (except for logo/home) */
-.nav-links {
+.top-nav{
+	display: flex;
+	justify-content: space-between;
+}
+.hamburger-menu{
 	display: none;
+	margin-right: 2rem;
+	margin-top: 2rem;
 }
 
 .fa-bars {
@@ -184,9 +190,41 @@ a:hover{
 	padding: 0 .5rem;
 }
 
- .fa-bars:hover{
+.fa-bars:hover{
 	color: azure;
 	background-color: grey;
- }
+}
 
- 
+.nav-links{
+	flex-direction: row;
+	margin-left: 5%;
+}
+
+@media (max-width: 850px) {
+	.Logo{
+		width: 10rem;
+		padding-top: 1rem;
+		padding-left: 1rem;
+	}
+
+	.nav-links {
+		display: none;
+		flex-direction: column; 
+		align-items: center;
+	}
+
+	.nav_element{
+		border: 3px solid black;
+		padding: .5rem 30%;
+		margin: 1rem 1rem;
+	}
+
+	.hamburger-menu{
+		display: flex;
+	}
+	
+
+	.nav_element{
+		font-size: 2rem;
+	}
+} 

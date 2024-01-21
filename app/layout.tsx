@@ -14,9 +14,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const [isLinksVisible, setLinksVisible] = useState(false);
+  const [isLinksVisible, setLinksVisible] = useState(true);
 
-  const myFunction = () => {
+  const handleClick = () => {
     setLinksVisible((prevValue) => !prevValue);
   };
 
@@ -25,22 +25,23 @@ export default function RootLayout({
       <head>
         <title> Total Fashion Roxbury </title>
       </head>
-      <body>
+      {/* TODO: revert layout.tsx into server side rendered page 
+          by seperating the navbar into it's own component*/}
+      <body> 
         <nav className='main-menu'>
+          <div className='top-nav'>
           <Link href={'./'}>
             <Image className='Logo' src={Logo} alt="logo" />
           </Link>
-          <Link className="nav_element" href='./'> Home </Link>
-          <Link className="nav_element" href='./services'> Services </Link>
-          <Link className="nav_element" href='./contact'> Contact </Link>
-          <div className='nav-links' style={{ display: isLinksVisible ? 'block' : 'none' }}>
+          <Link className='hamburger-menu' href="#" onClick={handleClick}>
+            <FontAwesomeIcon icon={faBars} className='fa-bars' size='4x'/>
+          </Link>
+          </div>
+          <div className='nav-links' style={{ display: isLinksVisible ? 'flex' : 'none' }}>
             <Link className="nav_element" href='./'> Home </Link>
             <Link className="nav_element" href='./services'> Services </Link>
             <Link className="nav_element" href='./contact'> Contact </Link>
           </div>
-          <Link className='hamburger-menu' href="#" onClick={myFunction}>
-            <FontAwesomeIcon icon={faBars} className='fa-bars' size='4x'/>
-          </Link>
         </nav>
         
         {children}
