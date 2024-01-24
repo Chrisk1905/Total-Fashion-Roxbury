@@ -33,14 +33,17 @@ export default function RootLayout({
           <Link href={'./'}>
             <Image className='Logo' src={Logo} alt="logo" />
           </Link>
+          <Link className="top_nav_element" href='./'> Home </Link>
+          <Link className="top_nav_element" href='./services'> Services </Link>
+          <Link className="top_nav_element" href='./contact'> Contact </Link>
           <Link className='hamburger-menu' href="#" onClick={handleClick}>
             <FontAwesomeIcon icon={faBars} className='fa-bars' size='4x'/>
           </Link>
           </div>
-          <div className='nav-links' style={{ display: isLinksVisible ? 'flex' : 'none' }}>
-            <Link className="nav_element" href='./'> Home </Link>
-            <Link className="nav_element" href='./services'> Services </Link>
-            <Link className="nav_element" href='./contact'> Contact </Link>
+          <div className='hamburger-links' style={{ display: isLinksVisible ? 'flex' : 'none' }}>
+            <Link className="hamburger_element" href='./'> Home </Link>
+            <Link className="hamburger_element" href='./services'> Services </Link>
+            <Link className="hamburger_element" href='./contact'> Contact </Link>
           </div>
         </nav>
         
