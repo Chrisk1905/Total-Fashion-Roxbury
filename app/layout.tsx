@@ -14,7 +14,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const [isLinksVisible, setLinksVisible] = useState(true);
+  const [isLinksVisible, setLinksVisible] = useState(false);
 
   const handleClick = () => {
     setLinksVisible((prevValue) => !prevValue);

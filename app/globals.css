@@ -146,9 +146,7 @@ body {
 	background-color: #FAF9F6;
 }
 
-.main-menu{
-	margin: 1rem;
-}
+
 
 .Logo{
 	height: auto;
@@ -169,11 +167,13 @@ a:hover{
 }
 
 @media(min-width:1000px){
+	.main-menu{
+		margin: 1rem;
+	}
 	.Logo {
 		size: 3rem;
 	}
-	
-	
+		
 	.top_nav_element{
 		font-family: Tangerine-Bold;
 		font-size: 3rem;
@@ -182,7 +182,8 @@ a:hover{
 	}
 	
 	.top_nav_element{
-		padding: 5rem 1rem;
+		padding-top: 5rem;
+		padding-right: 5%;
 	}	
 
 	.hamburger-menu{
@@ -199,10 +200,13 @@ a:hover{
 /* Hide the links inside the navigation menu (except for logo/home) */
 
 @media (max-width: 1000px) {
+	.main-menu{
+		margin: 1%;
+	}
 	.Logo{
 		width: 10rem;
-		padding-top: 1rem;
-		padding-left: 1rem;
+		padding-top: .5rem;
+		padding-left: .5rem;
 	}
 	.hamburger-links{
 		flex-direction: row;
