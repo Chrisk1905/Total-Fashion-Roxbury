@@ -19,14 +19,12 @@ export default function RootLayout({
   const handleClick = () => {
     setLinksVisible((prevValue) => !prevValue);
   };
-
+  
   return (
     <html lang="en">
       <head>
         <title> Total Fashion Roxbury </title>
       </head>
-      {/* TODO: revert layout.tsx into server side rendered page 
-          by seperating the navbar into it's own component*/}
       <body> 
         <nav className='main-menu'>
           <div className='top-nav'>
@@ -40,6 +38,8 @@ export default function RootLayout({
             <FontAwesomeIcon icon={faBars} className='fa-bars' size='4x'/>
           </Link>
           </div>
+      {/* TODO: revert layout.tsx into server side rendered page 
+          by seperating the hamburger menu into it's own component*/}
           <div className='hamburger-links' style={{ display: isLinksVisible ? 'flex' : 'none' }}>
             <Link className="hamburger_element" href='./'> Home </Link>
             <Link className="hamburger_element" href='./services'> Services </Link>
