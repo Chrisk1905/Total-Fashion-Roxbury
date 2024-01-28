@@ -147,7 +147,6 @@ body {
 }
 
 
-
 .Logo{
 	height: auto;
 	width: 21rem;
@@ -163,7 +162,6 @@ a:hover{
 }
 .top-nav{
 	display: flex;
-	justify-content: space-between;
 }
 
 @media(min-width:1000px){
@@ -174,6 +172,10 @@ a:hover{
 		size: 3rem;
 	}
 		
+	.top-nav{
+		justify-content: space-evenly;
+	}
+
 	.top_nav_element{
 		font-family: Tangerine-Bold;
 		font-size: 3rem;
@@ -183,7 +185,7 @@ a:hover{
 	
 	.top_nav_element{
 		padding-top: 5rem;
-		padding-right: 5%;
+		padding-right: 1rem;
 	}	
 
 	.hamburger-menu{
@@ -208,6 +210,9 @@ a:hover{
 		padding-top: .5rem;
 		padding-left: .5rem;
 	}
+	.top-nav{
+		justify-content: space-between;
+	}	
 	.hamburger-links{
 		flex-direction: row;
 		margin-left: 5%;
