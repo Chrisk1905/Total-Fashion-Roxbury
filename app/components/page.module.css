@@ -1,4 +1,4 @@
-
+/* footer */
 .footer{
     display: flex;
     flex-direction: row;
@@ -23,6 +23,26 @@
 
 }
 
+@media (max-width: 850px){
+    .footer{
+        flex-direction: column;
+    }
+    .business_hours{
+        display: flex;
+        flex-direction: column;
+    }
+    .business_hours td{
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .announcement{
+        font-size: 1rem;
+    }
+    .map_container{
+        margin: 4% auto;
+        width: 92%;
+    }
+}
 
 .directions{
     margin-top: 6%;
