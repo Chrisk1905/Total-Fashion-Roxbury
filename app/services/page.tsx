@@ -1,14 +1,10 @@
-"use client";
 import styles from './page.module.css'
 import Image from 'next/image'
 import Dry_Cleaning from '/public/Dry_Cleaning.svg'
 import Alteration from '/public/trousers.png'
 import Wedding_Dress from '/public/wedding-dress.png'
-import { useEffect,useState } from 'react'
 
 export default function Page(){
-  const [slideIndex, setSlideIndex] = useState(0); // Index starts from 0 
-  
   const slides = [
     {
       image: Dry_Cleaning,
