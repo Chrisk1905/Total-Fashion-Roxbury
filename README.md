@@ -13,23 +13,25 @@ https://total-fashion-roxbury.vercel.app/
 
 ## 🤝 Contributing
 
-This project was bootstrapped with create-next-app 
+This project was bootstrapped with create-next-app.
 
 https://nextjs.org/docs/pages/api-reference/create-next-app
 
+I used the NEXT.js app router, and vanilla CSS. 
+
 ### Clone the project
 
-'''
+```
 git clone https://github.com/Chrisk1905/Total-Fashion-Roxbury.git
-'''
+```
 
-### How to run on your local enviroment
+### Run on your local enviroment
 
-'''
+```
 npm i 
 
 npm run dev
-'''
+```
 
 ### Submit a pull request
 
