@@ -2,7 +2,7 @@
 
 A web app built as a landing page and content managment system for an alterations and dry cleaning shop. 
 
-I wanted to give a local dry cleaners an oinline presence with a mobile responsive website, and a way to manage its contents with updates.
+A local dry cleaners wanted an online presence with a mobile responsive website, and a way to manage its contents with updates.
 
 ### How to use
 
