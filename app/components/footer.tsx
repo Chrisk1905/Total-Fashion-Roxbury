@@ -6,7 +6,7 @@ export default function Footer(){
     return (
         <footer className={styles.footer}>
             <div className={styles.business_hours}>
-                <p className={styles.announcement}>Happy New Year! 📢 </p>
+                <p className={styles.announcement}>  📢 </p>
                 <table>
                     <tbody>
                     <tr>
