@@ -5,18 +5,8 @@ import Footer from './components/footer'
 import styles from './page.module.css'
 
 export default function Home() {
-  
-  const contentful = require('contentful')
-  const client = contentful.createClient({
-    space: 'blcj65asgwii',
-    environment: 'master', // defaults to 'master' if not set
-    accessToken: 'rdGQ4czvp9J_QZz5px6ujIXmGCAypOjv7K6H9ucvm08'
-  })
-  
-  client.getEntry('5zIHA9tltAe5ysopcKPr4Y')
-    .then((entry) => console.log(entry))
-    .catch(console.error)  
-
+ 
+ 
   return (
     <>
       <div className={styles.Hero_Container}>
