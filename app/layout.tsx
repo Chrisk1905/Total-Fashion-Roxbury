@@ -1,5 +1,5 @@
 import Footer from './components/footer'
-import HamburgerMenu from './hamburger-menu/hamburger-menu'
+import HamburgerMenu from './hamburgerMenu/hamburger-menu'
 import './globals.css'
 
 export default function RootLayout({
